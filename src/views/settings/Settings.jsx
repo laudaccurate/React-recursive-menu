@@ -1,6 +1,6 @@
 import React from "react";
 import {Switch, Route, useRouteMatch} from 'react-router-dom';
-import Security from './views/Security';
+import Security from '../Security';
 
 const Settings = props => {
   let {path} = useRouteMatch;

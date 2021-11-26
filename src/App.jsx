@@ -19,6 +19,9 @@ function App() {
             <Route path='/profile'>
               <Profile/>
             </Route>
+            <Route path='/settings'>
+              <Settings/>
+            </Route>
           </Switch>
         </Layout>
       </div>

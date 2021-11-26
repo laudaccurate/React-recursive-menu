@@ -1,5 +1,6 @@
 import React from "react";
 import style from './layout.module.css';
+import Sidebar from './components/sidebar/Sidebar';
 
 const Layout = props => {
   const {children} = props;
@@ -8,9 +9,11 @@ const Layout = props => {
     <div className={style.layout}>
       <header className={style.header}></header>
 
-      <aside className={style.aside}></aside>
+      <aside className={style.aside}>
+        <Sidebar/>
+      </aside>
 
-      <main className={style.main}></main>
+      <main className={style.main}>{children}</main>
 
       <footer className={style.footer}></footer>
     </div>
